@@ -1,5 +1,7 @@
 React arithmatic Demo App
 
+Link: https://arithmatic-operation-app.netlify.app/
+
 Requirments:
 
 1. Take two inputes as number
@@ -21,3 +23,12 @@ Requirments:
 App1.jsx contain without refactor i.e app1.jsx has all files and functions
 
 App.jsx Contain Refactor
+
+/\*\*
+
+- DONE: Handle user input fields
+- DONE: Handle operations
+- DONE: Handle a list of histories
+- DONE: Render history list
+- DONE: Restore the history
+  \*/
