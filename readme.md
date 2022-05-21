@@ -32,3 +32,8 @@ App.jsx Contain Refactor
 - DONE: Render history list
 - DONE: Restore the history
   \*/
+
+What we install packages:
+
+yarn add prop-types
+yarn add shortid
