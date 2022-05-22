@@ -22,8 +22,8 @@ function* generateId() {
 const getId = generateId();
 
 const InitialInputState = {
-  a: 10,
-  b: 20,
+  a: 0,
+  b: 0,
 };
 
 const App = () => {
@@ -46,7 +46,7 @@ const App = () => {
 
   const handleArithmeticOps = (operation) => {
     if (!inputState.a || !inputState.b) {
-      alert("Invalid Input");
+      alert("Invalid Input, please enter a valid number");
       return;
     }
 
@@ -56,7 +56,7 @@ const App = () => {
 		  return ${inputState.a} ${operation} ${inputState.b}
 		`
     );
-    const result = f(operation);
+    const result = f(operation).toFixed(2);
     setResult(result);
     // setResult(eval(`${inputState.a} ${operation} ${inputState.b}`));
 
@@ -78,7 +78,7 @@ const App = () => {
 
   return (
     <div style={{ width: "50%", margin: "0 auto" }}>
-      <h2 style={{ color: "#031cfc" }}>RESULT: {result}</h2>
+      <h2 style={{ color: "#086fc9" }}>RESULT: {result}</h2>
       <InputSection inputs={inputState} handleInputFields={handleInputFields} />
       <OperationSection
         handleArithmeticOps={handleArithmeticOps}

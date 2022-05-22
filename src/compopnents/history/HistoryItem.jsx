@@ -10,8 +10,14 @@ const HistoryItem = ({ historyItem, disabled, handleRestoreBtn }) => {
     setShow(!show);
   };
   return (
-    <li key={historyItem.id}>
-      <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+    <li key={historyItem.id} style={{ borderBottom: "1px solid #a5a5ad" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "2rem",
+          alignItems: "center",
+        }}
+      >
         <p>
           Operation: {historyItem.inputs.a} {historyItem.operation}{" "}
           {historyItem.inputs.b}, Result: {historyItem.result}
@@ -26,6 +32,7 @@ const HistoryItem = ({ historyItem, disabled, handleRestoreBtn }) => {
             {historyItem.date.toLocaleDateString()}{" "}
             {historyItem.date.toLocaleTimeString()}
           </small>
+          <br />
           <br />
           <Button
             text="Restore"

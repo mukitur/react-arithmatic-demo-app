@@ -4,8 +4,16 @@ import HistoryItem from "./HistoryItem";
 
 const HistorySection = ({ histories, restoredHistory, handleRestoreBtn }) => {
   return (
-    <div>
-      <p>History</p>
+    <div
+      style={{
+        width: "100%",
+        padding: "0.5rem 1rem",
+        backgroundColor: "#f8f8f8",
+        borderRadius: "0.10rem",
+        marginTop: "25px",
+      }}
+    >
+      <h4>History</h4>
       {histories.length === 0 ? (
         <p>
           <small>There is no history</small>

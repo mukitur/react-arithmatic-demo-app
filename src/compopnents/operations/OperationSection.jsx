@@ -37,8 +37,16 @@ const OperationSection = ({ handleArithmeticOps, handleClearOps }) => {
     },
   ];
   return (
-    <div>
-      <p>Operations</p>
+    <div
+      style={{
+        width: "100%",
+        padding: "0.5rem 1rem",
+        backgroundColor: "#f8f8f8",
+        borderRadius: "0.10rem",
+        marginTop: "25px",
+      }}
+    >
+      <p>Operations/Calculations</p>
       <div style={{ display: "flex", gap: "0.5rem" }}>
         {operations.map((ops) => (
           <Button key={ops.id} text={ops.text} onClick={ops.onClick} />
